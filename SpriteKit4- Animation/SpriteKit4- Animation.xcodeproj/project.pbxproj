@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EC342B8F196C389400C10BB8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC342B8E196C389400C10BB8 /* Foundation.framework */; };
+		EC342B91196C389400C10BB8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC342B90196C389400C10BB8 /* CoreGraphics.framework */; };
+		EC342B93196C389400C10BB8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC342B92196C389400C10BB8 /* UIKit.framework */; };
+		EC342B95196C389400C10BB8 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC342B94196C389400C10BB8 /* SpriteKit.framework */; };
+		EC342B9B196C389400C10BB8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EC342B99196C389400C10BB8 /* InfoPlist.strings */; };
+		EC342B9D196C389400C10BB8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC342B9C196C389400C10BB8 /* main.m */; };
+		EC342BA1196C389400C10BB8 /* TDCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC342BA0196C389400C10BB8 /* TDCAppDelegate.m */; };
+		EC342BA4196C389400C10BB8 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC342BA2196C389400C10BB8 /* Main_iPhone.storyboard */; };
+		EC342BA7196C389400C10BB8 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC342BA5196C389400C10BB8 /* Main_iPad.storyboard */; };
+		EC342BAA196C389400C10BB8 /* TDCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC342BA9196C389400C10BB8 /* TDCViewController.m */; };
+		EC342BAD196C389400C10BB8 /* TDCMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = EC342BAC196C389400C10BB8 /* TDCMyScene.m */; };
+		EC342BAF196C389400C10BB8 /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = EC342BAE196C389400C10BB8 /* Spaceship.png */; };
+		EC342BB1196C389400C10BB8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC342BB0196C389400C10BB8 /* Images.xcassets */; };
+		EC342BB8196C389400C10BB8 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC342BB7196C389400C10BB8 /* XCTest.framework */; };
+		EC342BB9196C389400C10BB8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC342B8E196C389400C10BB8 /* Foundation.framework */; };
+		EC342BBA196C389400C10BB8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC342B92196C389400C10BB8 /* UIKit.framework */; };
+		EC342BC2196C389400C10BB8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EC342BC0196C389400C10BB8 /* InfoPlist.strings */; };
+		EC342BC4196C389400C10BB8 /* SpriteKit4__AnimationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC342BC3196C389400C10BB8 /* SpriteKit4__AnimationTests.m */; };
+		EC342BE5196C3C3100C10BB8 /* Bird_sore00.png in Resources */ = {isa = PBXBuildFile; fileRef = EC342BCD196C3C3000C10BB8 /* Bird_sore00.png */; };
+		EC342BE6196C3C3100C10BB8 /* Bird_sore00@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC342BCE196C3C3000C10BB8 /* Bird_sore00@2x.png */; };
+		EC342BE7196C3C3100C10BB8 /* Bird_sore01.png in Resources */ = {isa = PBXBuildFile; fileRef = EC342BCF196C3C3000C10BB8 /* Bird_sore01.png */; };
+		EC342BE8196C3C3100C10BB8 /* Bird_sore01@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC342BD0196C3C3000C10BB8 /* Bird_sore01@2x.png */; };
+		EC342BE9196C3C3100C10BB8 /* Bird_sore02.png in Resources */ = {isa = PBXBuildFile; fileRef = EC342BD1196C3C3000C10BB8 /* Bird_sore02.png */; };
+		EC342BEA196C3C3100C10BB8 /* Bird_sore02@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC342BD2196C3C3000C10BB8 /* Bird_sore02@2x.png */; };
+		EC342BEB196C3C3100C10BB8 /* Bird_sore03.png in Resources */ = {isa = PBXBuildFile; fileRef = EC342BD3196C3C3000C10BB8 /* Bird_sore03.png */; };
+		EC342BEC196C3C3100C10BB8 /* Bird_sore03@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC342BD4196C3C3000C10BB8 /* Bird_sore03@2x.png */; };
+		EC342BED196C3C3100C10BB8 /* Bird_sore04.png in Resources */ = {isa = PBXBuildFile; fileRef = EC342BD5196C3C3000C10BB8 /* Bird_sore04.png */; };
+		EC342BEE196C3C3100C10BB8 /* Bird_sore04@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC342BD6196C3C3000C10BB8 /* Bird_sore04@2x.png */; };
+		EC342BEF196C3C3100C10BB8 /* Bird_sore05.png in Resources */ = {isa = PBXBuildFile; fileRef = EC342BD7196C3C3000C10BB8 /* Bird_sore05.png */; };
+		EC342BF0196C3C3100C10BB8 /* Bird_sore05@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC342BD8196C3C3000C10BB8 /* Bird_sore05@2x.png */; };
+		EC342BF1196C3C3100C10BB8 /* Bird_sore06.png in Resources */ = {isa = PBXBuildFile; fileRef = EC342BD9196C3C3000C10BB8 /* Bird_sore06.png */; };
+		EC342BF2196C3C3100C10BB8 /* Bird_sore06@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC342BDA196C3C3100C10BB8 /* Bird_sore06@2x.png */; };
+		EC342BF3196C3C3100C10BB8 /* Bird_sore07.png in Resources */ = {isa = PBXBuildFile; fileRef = EC342BDB196C3C3100C10BB8 /* Bird_sore07.png */; };
+		EC342BF4196C3C3100C10BB8 /* Bird_sore07@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC342BDC196C3C3100C10BB8 /* Bird_sore07@2x.png */; };
+		EC342BF5196C3C3100C10BB8 /* Bird_sore08.png in Resources */ = {isa = PBXBuildFile; fileRef = EC342BDD196C3C3100C10BB8 /* Bird_sore08.png */; };
+		EC342BF6196C3C3100C10BB8 /* Bird_sore08@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC342BDE196C3C3100C10BB8 /* Bird_sore08@2x.png */; };
+		EC342BF7196C3C3100C10BB8 /* Bird_sore09.png in Resources */ = {isa = PBXBuildFile; fileRef = EC342BDF196C3C3100C10BB8 /* Bird_sore09.png */; };
+		EC342BF8196C3C3100C10BB8 /* Bird_sore09@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC342BE0196C3C3100C10BB8 /* Bird_sore09@2x.png */; };
+		EC342BF9196C3C3100C10BB8 /* Bird_sore10.png in Resources */ = {isa = PBXBuildFile; fileRef = EC342BE1196C3C3100C10BB8 /* Bird_sore10.png */; };
+		EC342BFA196C3C3100C10BB8 /* Bird_sore10@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC342BE2196C3C3100C10BB8 /* Bird_sore10@2x.png */; };
+		EC342BFB196C3C3100C10BB8 /* Bird_sore11.png in Resources */ = {isa = PBXBuildFile; fileRef = EC342BE3196C3C3100C10BB8 /* Bird_sore11.png */; };
+		EC342BFC196C3C3100C10BB8 /* Bird_sore11@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC342BE4196C3C3100C10BB8 /* Bird_sore11@2x.png */; };
+		EC342BFE196C3DD100C10BB8 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = EC342BFD196C3DD100C10BB8 /* background.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EC342BBB196C389400C10BB8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC342B83196C389300C10BB8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC342B8A196C389400C10BB8;
+			remoteInfo = "SpriteKit4- Animation";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EC342B8B196C389400C10BB8 /* SpriteKit4- Animation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SpriteKit4- Animation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC342B8E196C389400C10BB8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EC342B90196C389400C10BB8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EC342B92196C389400C10BB8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EC342B94196C389400C10BB8 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		EC342B98196C389400C10BB8 /* SpriteKit4- Animation-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpriteKit4- Animation-Info.plist"; sourceTree = "<group>"; };
+		EC342B9A196C389400C10BB8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EC342B9C196C389400C10BB8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EC342B9E196C389400C10BB8 /* SpriteKit4- Animation-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SpriteKit4- Animation-Prefix.pch"; sourceTree = "<group>"; };
+		EC342B9F196C389400C10BB8 /* TDCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TDCAppDelegate.h; sourceTree = "<group>"; };
+		EC342BA0196C389400C10BB8 /* TDCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TDCAppDelegate.m; sourceTree = "<group>"; };
+		EC342BA3196C389400C10BB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		EC342BA6196C389400C10BB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		EC342BA8196C389400C10BB8 /* TDCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TDCViewController.h; sourceTree = "<group>"; };
+		EC342BA9196C389400C10BB8 /* TDCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TDCViewController.m; sourceTree = "<group>"; };
+		EC342BAB196C389400C10BB8 /* TDCMyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TDCMyScene.h; sourceTree = "<group>"; };
+		EC342BAC196C389400C10BB8 /* TDCMyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TDCMyScene.m; sourceTree = "<group>"; };
+		EC342BAE196C389400C10BB8 /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
+		EC342BB0196C389400C10BB8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EC342BB6196C389400C10BB8 /* SpriteKit4- AnimationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SpriteKit4- AnimationTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC342BB7196C389400C10BB8 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		EC342BBF196C389400C10BB8 /* SpriteKit4- AnimationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpriteKit4- AnimationTests-Info.plist"; sourceTree = "<group>"; };
+		EC342BC1196C389400C10BB8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EC342BC3196C389400C10BB8 /* SpriteKit4__AnimationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpriteKit4__AnimationTests.m; sourceTree = "<group>"; };
+		EC342BCD196C3C3000C10BB8 /* Bird_sore00.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bird_sore00.png; sourceTree = "<group>"; };
+		EC342BCE196C3C3000C10BB8 /* Bird_sore00@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bird_sore00@2x.png"; sourceTree = "<group>"; };
+		EC342BCF196C3C3000C10BB8 /* Bird_sore01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bird_sore01.png; sourceTree = "<group>"; };
+		EC342BD0196C3C3000C10BB8 /* Bird_sore01@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bird_sore01@2x.png"; sourceTree = "<group>"; };
+		EC342BD1196C3C3000C10BB8 /* Bird_sore02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bird_sore02.png; sourceTree = "<group>"; };
+		EC342BD2196C3C3000C10BB8 /* Bird_sore02@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bird_sore02@2x.png"; sourceTree = "<group>"; };
+		EC342BD3196C3C3000C10BB8 /* Bird_sore03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bird_sore03.png; sourceTree = "<group>"; };
+		EC342BD4196C3C3000C10BB8 /* Bird_sore03@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bird_sore03@2x.png"; sourceTree = "<group>"; };
+		EC342BD5196C3C3000C10BB8 /* Bird_sore04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bird_sore04.png; sourceTree = "<group>"; };
+		EC342BD6196C3C3000C10BB8 /* Bird_sore04@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bird_sore04@2x.png"; sourceTree = "<group>"; };
+		EC342BD7196C3C3000C10BB8 /* Bird_sore05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bird_sore05.png; sourceTree = "<group>"; };
+		EC342BD8196C3C3000C10BB8 /* Bird_sore05@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bird_sore05@2x.png"; sourceTree = "<group>"; };
+		EC342BD9196C3C3000C10BB8 /* Bird_sore06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bird_sore06.png; sourceTree = "<group>"; };
+		EC342BDA196C3C3100C10BB8 /* Bird_sore06@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bird_sore06@2x.png"; sourceTree = "<group>"; };
+		EC342BDB196C3C3100C10BB8 /* Bird_sore07.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bird_sore07.png; sourceTree = "<group>"; };
+		EC342BDC196C3C3100C10BB8 /* Bird_sore07@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bird_sore07@2x.png"; sourceTree = "<group>"; };
+		EC342BDD196C3C3100C10BB8 /* Bird_sore08.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bird_sore08.png; sourceTree = "<group>"; };
+		EC342BDE196C3C3100C10BB8 /* Bird_sore08@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bird_sore08@2x.png"; sourceTree = "<group>"; };
+		EC342BDF196C3C3100C10BB8 /* Bird_sore09.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bird_sore09.png; sourceTree = "<group>"; };
+		EC342BE0196C3C3100C10BB8 /* Bird_sore09@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bird_sore09@2x.png"; sourceTree = "<group>"; };
+		EC342BE1196C3C3100C10BB8 /* Bird_sore10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bird_sore10.png; sourceTree = "<group>"; };
+		EC342BE2196C3C3100C10BB8 /* Bird_sore10@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bird_sore10@2x.png"; sourceTree = "<group>"; };
+		EC342BE3196C3C3100C10BB8 /* Bird_sore11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bird_sore11.png; sourceTree = "<group>"; };
+		EC342BE4196C3C3100C10BB8 /* Bird_sore11@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bird_sore11@2x.png"; sourceTree = "<group>"; };
+		EC342BFD196C3DD100C10BB8 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC342B88196C389400C10BB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC342B91196C389400C10BB8 /* CoreGraphics.framework in Frameworks */,
+				EC342B93196C389400C10BB8 /* UIKit.framework in Frameworks */,
+				EC342B95196C389400C10BB8 /* SpriteKit.framework in Frameworks */,
+				EC342B8F196C389400C10BB8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC342BB3196C389400C10BB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC342BB8196C389400C10BB8 /* XCTest.framework in Frameworks */,
+				EC342BBA196C389400C10BB8 /* UIKit.framework in Frameworks */,
+				EC342BB9196C389400C10BB8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EC342B82196C389300C10BB8 = {
+			isa = PBXGroup;
+			children = (
+				EC342B96196C389400C10BB8 /* SpriteKit4- Animation */,
+				EC342BBD196C389400C10BB8 /* SpriteKit4- AnimationTests */,
+				EC342B8D196C389400C10BB8 /* Frameworks */,
+				EC342B8C196C389400C10BB8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EC342B8C196C389400C10BB8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC342B8B196C389400C10BB8 /* SpriteKit4- Animation.app */,
+				EC342BB6196C389400C10BB8 /* SpriteKit4- AnimationTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC342B8D196C389400C10BB8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EC342B8E196C389400C10BB8 /* Foundation.framework */,
+				EC342B90196C389400C10BB8 /* CoreGraphics.framework */,
+				EC342B92196C389400C10BB8 /* UIKit.framework */,
+				EC342B94196C389400C10BB8 /* SpriteKit.framework */,
+				EC342BB7196C389400C10BB8 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EC342B96196C389400C10BB8 /* SpriteKit4- Animation */ = {
+			isa = PBXGroup;
+			children = (
+				ECAFDC7E19945B6C00B8B074 /* BirdAssets */,
+				EC342B9F196C389400C10BB8 /* TDCAppDelegate.h */,
+				EC342BA0196C389400C10BB8 /* TDCAppDelegate.m */,
+				EC342BA2196C389400C10BB8 /* Main_iPhone.storyboard */,
+				EC342BA5196C389400C10BB8 /* Main_iPad.storyboard */,
+				EC342BA8196C389400C10BB8 /* TDCViewController.h */,
+				EC342BA9196C389400C10BB8 /* TDCViewController.m */,
+				EC342BAB196C389400C10BB8 /* TDCMyScene.h */,
+				EC342BAC196C389400C10BB8 /* TDCMyScene.m */,
+				EC342BFD196C3DD100C10BB8 /* background.png */,
+				EC342BAE196C389400C10BB8 /* Spaceship.png */,
+				EC342BB0196C389400C10BB8 /* Images.xcassets */,
+				EC342B97196C389400C10BB8 /* Supporting Files */,
+			);
+			path = "SpriteKit4- Animation";
+			sourceTree = "<group>";
+		};
+		EC342B97196C389400C10BB8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EC342B98196C389400C10BB8 /* SpriteKit4- Animation-Info.plist */,
+				EC342B99196C389400C10BB8 /* InfoPlist.strings */,
+				EC342B9C196C389400C10BB8 /* main.m */,
+				EC342B9E196C389400C10BB8 /* SpriteKit4- Animation-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EC342BBD196C389400C10BB8 /* SpriteKit4- AnimationTests */ = {
+			isa = PBXGroup;
+			children = (
+				EC342BC3196C389400C10BB8 /* SpriteKit4__AnimationTests.m */,
+				EC342BBE196C389400C10BB8 /* Supporting Files */,
+			);
+			path = "SpriteKit4- AnimationTests";
+			sourceTree = "<group>";
+		};
+		EC342BBE196C389400C10BB8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EC342BBF196C389400C10BB8 /* SpriteKit4- AnimationTests-Info.plist */,
+				EC342BC0196C389400C10BB8 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ECAFDC7E19945B6C00B8B074 /* BirdAssets */ = {
+			isa = PBXGroup;
+			children = (
+				EC342BCD196C3C3000C10BB8 /* Bird_sore00.png */,
+				EC342BCE196C3C3000C10BB8 /* Bird_sore00@2x.png */,
+				EC342BCF196C3C3000C10BB8 /* Bird_sore01.png */,
+				EC342BD0196C3C3000C10BB8 /* Bird_sore01@2x.png */,
+				EC342BD1196C3C3000C10BB8 /* Bird_sore02.png */,
+				EC342BD2196C3C3000C10BB8 /* Bird_sore02@2x.png */,
+				EC342BD3196C3C3000C10BB8 /* Bird_sore03.png */,
+				EC342BD4196C3C3000C10BB8 /* Bird_sore03@2x.png */,
+				EC342BD5196C3C3000C10BB8 /* Bird_sore04.png */,
+				EC342BD6196C3C3000C10BB8 /* Bird_sore04@2x.png */,
+				EC342BD7196C3C3000C10BB8 /* Bird_sore05.png */,
+				EC342BD8196C3C3000C10BB8 /* Bird_sore05@2x.png */,
+				EC342BD9196C3C3000C10BB8 /* Bird_sore06.png */,
+				EC342BDA196C3C3100C10BB8 /* Bird_sore06@2x.png */,
+				EC342BDB196C3C3100C10BB8 /* Bird_sore07.png */,
+				EC342BDC196C3C3100C10BB8 /* Bird_sore07@2x.png */,
+				EC342BDD196C3C3100C10BB8 /* Bird_sore08.png */,
+				EC342BDE196C3C3100C10BB8 /* Bird_sore08@2x.png */,
+				EC342BDF196C3C3100C10BB8 /* Bird_sore09.png */,
+				EC342BE0196C3C3100C10BB8 /* Bird_sore09@2x.png */,
+				EC342BE1196C3C3100C10BB8 /* Bird_sore10.png */,
+				EC342BE2196C3C3100C10BB8 /* Bird_sore10@2x.png */,
+				EC342BE3196C3C3100C10BB8 /* Bird_sore11.png */,
+				EC342BE4196C3C3100C10BB8 /* Bird_sore11@2x.png */,
+			);
+			name = BirdAssets;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC342B8A196C389400C10BB8 /* SpriteKit4- Animation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC342BC7196C389400C10BB8 /* Build configuration list for PBXNativeTarget "SpriteKit4- Animation" */;
+			buildPhases = (
+				EC342B87196C389400C10BB8 /* Sources */,
+				EC342B88196C389400C10BB8 /* Frameworks */,
+				EC342B89196C389400C10BB8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SpriteKit4- Animation";
+			productName = "SpriteKit4- Animation";
+			productReference = EC342B8B196C389400C10BB8 /* SpriteKit4- Animation.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EC342BB5196C389400C10BB8 /* SpriteKit4- AnimationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC342BCA196C389400C10BB8 /* Build configuration list for PBXNativeTarget "SpriteKit4- AnimationTests" */;
+			buildPhases = (
+				EC342BB2196C389400C10BB8 /* Sources */,
+				EC342BB3196C389400C10BB8 /* Frameworks */,
+				EC342BB4196C389400C10BB8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC342BBC196C389400C10BB8 /* PBXTargetDependency */,
+			);
+			name = "SpriteKit4- AnimationTests";
+			productName = "SpriteKit4- AnimationTests";
+			productReference = EC342BB6196C389400C10BB8 /* SpriteKit4- AnimationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC342B83196C389300C10BB8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TDC;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = TDC;
+				TargetAttributes = {
+					EC342BB5196C389400C10BB8 = {
+						TestTargetID = EC342B8A196C389400C10BB8;
+					};
+				};
+			};
+			buildConfigurationList = EC342B86196C389300C10BB8 /* Build configuration list for PBXProject "SpriteKit4- Animation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EC342B82196C389300C10BB8;
+			productRefGroup = EC342B8C196C389400C10BB8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC342B8A196C389400C10BB8 /* SpriteKit4- Animation */,
+				EC342BB5196C389400C10BB8 /* SpriteKit4- AnimationTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC342B89196C389400C10BB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC342BEF196C3C3100C10BB8 /* Bird_sore05.png in Resources */,
+				EC342BFE196C3DD100C10BB8 /* background.png in Resources */,
+				EC342BF5196C3C3100C10BB8 /* Bird_sore08.png in Resources */,
+				EC342BF0196C3C3100C10BB8 /* Bird_sore05@2x.png in Resources */,
+				EC342BF3196C3C3100C10BB8 /* Bird_sore07.png in Resources */,
+				EC342BE8196C3C3100C10BB8 /* Bird_sore01@2x.png in Resources */,
+				EC342BED196C3C3100C10BB8 /* Bird_sore04.png in Resources */,
+				EC342BEE196C3C3100C10BB8 /* Bird_sore04@2x.png in Resources */,
+				EC342BF2196C3C3100C10BB8 /* Bird_sore06@2x.png in Resources */,
+				EC342BAF196C389400C10BB8 /* Spaceship.png in Resources */,
+				EC342BFB196C3C3100C10BB8 /* Bird_sore11.png in Resources */,
+				EC342BEB196C3C3100C10BB8 /* Bird_sore03.png in Resources */,
+				EC342BEC196C3C3100C10BB8 /* Bird_sore03@2x.png in Resources */,
+				EC342BFA196C3C3100C10BB8 /* Bird_sore10@2x.png in Resources */,
+				EC342BE6196C3C3100C10BB8 /* Bird_sore00@2x.png in Resources */,
+				EC342BF4196C3C3100C10BB8 /* Bird_sore07@2x.png in Resources */,
+				EC342BB1196C389400C10BB8 /* Images.xcassets in Resources */,
+				EC342BA7196C389400C10BB8 /* Main_iPad.storyboard in Resources */,
+				EC342BEA196C3C3100C10BB8 /* Bird_sore02@2x.png in Resources */,
+				EC342BF6196C3C3100C10BB8 /* Bird_sore08@2x.png in Resources */,
+				EC342BE7196C3C3100C10BB8 /* Bird_sore01.png in Resources */,
+				EC342BF9196C3C3100C10BB8 /* Bird_sore10.png in Resources */,
+				EC342BA4196C389400C10BB8 /* Main_iPhone.storyboard in Resources */,
+				EC342BE9196C3C3100C10BB8 /* Bird_sore02.png in Resources */,
+				EC342BF7196C3C3100C10BB8 /* Bird_sore09.png in Resources */,
+				EC342BF8196C3C3100C10BB8 /* Bird_sore09@2x.png in Resources */,
+				EC342B9B196C389400C10BB8 /* InfoPlist.strings in Resources */,
+				EC342BFC196C3C3100C10BB8 /* Bird_sore11@2x.png in Resources */,
+				EC342BE5196C3C3100C10BB8 /* Bird_sore00.png in Resources */,
+				EC342BF1196C3C3100C10BB8 /* Bird_sore06.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC342BB4196C389400C10BB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC342BC2196C389400C10BB8 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC342B87196C389400C10BB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC342BAA196C389400C10BB8 /* TDCViewController.m in Sources */,
+				EC342BA1196C389400C10BB8 /* TDCAppDelegate.m in Sources */,
+				EC342BAD196C389400C10BB8 /* TDCMyScene.m in Sources */,
+				EC342B9D196C389400C10BB8 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC342BB2196C389400C10BB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC342BC4196C389400C10BB8 /* SpriteKit4__AnimationTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EC342BBC196C389400C10BB8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC342B8A196C389400C10BB8 /* SpriteKit4- Animation */;
+			targetProxy = EC342BBB196C389400C10BB8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EC342B99196C389400C10BB8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC342B9A196C389400C10BB8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EC342BA2196C389400C10BB8 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC342BA3196C389400C10BB8 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		EC342BA5196C389400C10BB8 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC342BA6196C389400C10BB8 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		EC342BC0196C389400C10BB8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC342BC1196C389400C10BB8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EC342BC5196C389400C10BB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EC342BC6196C389400C10BB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EC342BC8196C389400C10BB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SpriteKit4- Animation/SpriteKit4- Animation-Prefix.pch";
+				INFOPLIST_FILE = "SpriteKit4- Animation/SpriteKit4- Animation-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EC342BC9196C389400C10BB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SpriteKit4- Animation/SpriteKit4- Animation-Prefix.pch";
+				INFOPLIST_FILE = "SpriteKit4- Animation/SpriteKit4- Animation-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		EC342BCB196C389400C10BB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SpriteKit4- Animation.app/SpriteKit4- Animation";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SpriteKit4- Animation/SpriteKit4- Animation-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SpriteKit4- AnimationTests/SpriteKit4- AnimationTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		EC342BCC196C389400C10BB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SpriteKit4- Animation.app/SpriteKit4- Animation";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SpriteKit4- Animation/SpriteKit4- Animation-Prefix.pch";
+				INFOPLIST_FILE = "SpriteKit4- AnimationTests/SpriteKit4- AnimationTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC342B86196C389300C10BB8 /* Build configuration list for PBXProject "SpriteKit4- Animation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC342BC5196C389400C10BB8 /* Debug */,
+				EC342BC6196C389400C10BB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC342BC7196C389400C10BB8 /* Build configuration list for PBXNativeTarget "SpriteKit4- Animation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC342BC8196C389400C10BB8 /* Debug */,
+				EC342BC9196C389400C10BB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC342BCA196C389400C10BB8 /* Build configuration list for PBXNativeTarget "SpriteKit4- AnimationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC342BCB196C389400C10BB8 /* Debug */,
+				EC342BCC196C389400C10BB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EC342B83196C389300C10BB8 /* Project object */;
+}

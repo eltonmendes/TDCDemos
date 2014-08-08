@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EC342B3C196B808400C10BB8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC342B3B196B808400C10BB8 /* Foundation.framework */; };
+		EC342B3E196B808400C10BB8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC342B3D196B808400C10BB8 /* CoreGraphics.framework */; };
+		EC342B40196B808400C10BB8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC342B3F196B808400C10BB8 /* UIKit.framework */; };
+		EC342B42196B808400C10BB8 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC342B41196B808400C10BB8 /* SpriteKit.framework */; };
+		EC342B48196B808400C10BB8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EC342B46196B808400C10BB8 /* InfoPlist.strings */; };
+		EC342B4A196B808400C10BB8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC342B49196B808400C10BB8 /* main.m */; };
+		EC342B4E196B808400C10BB8 /* TDCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC342B4D196B808400C10BB8 /* TDCAppDelegate.m */; };
+		EC342B51196B808400C10BB8 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC342B4F196B808400C10BB8 /* Main_iPhone.storyboard */; };
+		EC342B54196B808400C10BB8 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC342B52196B808400C10BB8 /* Main_iPad.storyboard */; };
+		EC342B57196B808400C10BB8 /* TDCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC342B56196B808400C10BB8 /* TDCViewController.m */; };
+		EC342B5A196B808400C10BB8 /* TDCMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = EC342B59196B808400C10BB8 /* TDCMyScene.m */; };
+		EC342B5C196B808400C10BB8 /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = EC342B5B196B808400C10BB8 /* Spaceship.png */; };
+		EC342B5E196B808400C10BB8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC342B5D196B808400C10BB8 /* Images.xcassets */; };
+		EC342B65196B808500C10BB8 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC342B64196B808500C10BB8 /* XCTest.framework */; };
+		EC342B66196B808500C10BB8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC342B3B196B808400C10BB8 /* Foundation.framework */; };
+		EC342B67196B808500C10BB8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC342B3F196B808400C10BB8 /* UIKit.framework */; };
+		EC342B6F196B808500C10BB8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EC342B6D196B808500C10BB8 /* InfoPlist.strings */; };
+		EC342B71196B808500C10BB8 /* SpriteKit3_PhysicsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC342B70196B808500C10BB8 /* SpriteKit3_PhysicsTests.m */; };
+		EC342B7D196B82E300C10BB8 /* ball.png in Resources */ = {isa = PBXBuildFile; fileRef = EC342B7C196B82E200C10BB8 /* ball.png */; };
+		EC342B7F196B847E00C10BB8 /* backgroundsoccer.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EC342B7E196B847E00C10BB8 /* backgroundsoccer.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EC342B68196B808500C10BB8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC342B30196B808400C10BB8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC342B37196B808400C10BB8;
+			remoteInfo = "SpriteKit3-Physics";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EC342B38196B808400C10BB8 /* SpriteKit3-Physics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SpriteKit3-Physics.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC342B3B196B808400C10BB8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EC342B3D196B808400C10BB8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EC342B3F196B808400C10BB8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EC342B41196B808400C10BB8 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		EC342B45196B808400C10BB8 /* SpriteKit3-Physics-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpriteKit3-Physics-Info.plist"; sourceTree = "<group>"; };
+		EC342B47196B808400C10BB8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EC342B49196B808400C10BB8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EC342B4B196B808400C10BB8 /* SpriteKit3-Physics-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SpriteKit3-Physics-Prefix.pch"; sourceTree = "<group>"; };
+		EC342B4C196B808400C10BB8 /* TDCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TDCAppDelegate.h; sourceTree = "<group>"; };
+		EC342B4D196B808400C10BB8 /* TDCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TDCAppDelegate.m; sourceTree = "<group>"; };
+		EC342B50196B808400C10BB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		EC342B53196B808400C10BB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		EC342B55196B808400C10BB8 /* TDCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TDCViewController.h; sourceTree = "<group>"; };
+		EC342B56196B808400C10BB8 /* TDCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TDCViewController.m; sourceTree = "<group>"; };
+		EC342B58196B808400C10BB8 /* TDCMyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TDCMyScene.h; sourceTree = "<group>"; };
+		EC342B59196B808400C10BB8 /* TDCMyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TDCMyScene.m; sourceTree = "<group>"; };
+		EC342B5B196B808400C10BB8 /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
+		EC342B5D196B808400C10BB8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EC342B63196B808500C10BB8 /* SpriteKit3-PhysicsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SpriteKit3-PhysicsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC342B64196B808500C10BB8 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		EC342B6C196B808500C10BB8 /* SpriteKit3-PhysicsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpriteKit3-PhysicsTests-Info.plist"; sourceTree = "<group>"; };
+		EC342B6E196B808500C10BB8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EC342B70196B808500C10BB8 /* SpriteKit3_PhysicsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpriteKit3_PhysicsTests.m; sourceTree = "<group>"; };
+		EC342B7C196B82E200C10BB8 /* ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball.png; sourceTree = "<group>"; };
+		EC342B7E196B847E00C10BB8 /* backgroundsoccer.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = backgroundsoccer.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC342B35196B808400C10BB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC342B3E196B808400C10BB8 /* CoreGraphics.framework in Frameworks */,
+				EC342B40196B808400C10BB8 /* UIKit.framework in Frameworks */,
+				EC342B42196B808400C10BB8 /* SpriteKit.framework in Frameworks */,
+				EC342B3C196B808400C10BB8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC342B60196B808500C10BB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC342B65196B808500C10BB8 /* XCTest.framework in Frameworks */,
+				EC342B67196B808500C10BB8 /* UIKit.framework in Frameworks */,
+				EC342B66196B808500C10BB8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EC342B2F196B808400C10BB8 = {
+			isa = PBXGroup;
+			children = (
+				EC342B43196B808400C10BB8 /* SpriteKit3-Physics */,
+				EC342B6A196B808500C10BB8 /* SpriteKit3-PhysicsTests */,
+				EC342B3A196B808400C10BB8 /* Frameworks */,
+				EC342B39196B808400C10BB8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EC342B39196B808400C10BB8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC342B38196B808400C10BB8 /* SpriteKit3-Physics.app */,
+				EC342B63196B808500C10BB8 /* SpriteKit3-PhysicsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC342B3A196B808400C10BB8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EC342B3B196B808400C10BB8 /* Foundation.framework */,
+				EC342B3D196B808400C10BB8 /* CoreGraphics.framework */,
+				EC342B3F196B808400C10BB8 /* UIKit.framework */,
+				EC342B41196B808400C10BB8 /* SpriteKit.framework */,
+				EC342B64196B808500C10BB8 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EC342B43196B808400C10BB8 /* SpriteKit3-Physics */ = {
+			isa = PBXGroup;
+			children = (
+				EC342B4C196B808400C10BB8 /* TDCAppDelegate.h */,
+				EC342B4D196B808400C10BB8 /* TDCAppDelegate.m */,
+				EC342B4F196B808400C10BB8 /* Main_iPhone.storyboard */,
+				EC342B52196B808400C10BB8 /* Main_iPad.storyboard */,
+				EC342B55196B808400C10BB8 /* TDCViewController.h */,
+				EC342B56196B808400C10BB8 /* TDCViewController.m */,
+				EC342B58196B808400C10BB8 /* TDCMyScene.h */,
+				EC342B59196B808400C10BB8 /* TDCMyScene.m */,
+				EC342B7C196B82E200C10BB8 /* ball.png */,
+				EC342B7E196B847E00C10BB8 /* backgroundsoccer.jpg */,
+				EC342B5B196B808400C10BB8 /* Spaceship.png */,
+				EC342B5D196B808400C10BB8 /* Images.xcassets */,
+				EC342B44196B808400C10BB8 /* Supporting Files */,
+			);
+			path = "SpriteKit3-Physics";
+			sourceTree = "<group>";
+		};
+		EC342B44196B808400C10BB8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EC342B45196B808400C10BB8 /* SpriteKit3-Physics-Info.plist */,
+				EC342B46196B808400C10BB8 /* InfoPlist.strings */,
+				EC342B49196B808400C10BB8 /* main.m */,
+				EC342B4B196B808400C10BB8 /* SpriteKit3-Physics-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EC342B6A196B808500C10BB8 /* SpriteKit3-PhysicsTests */ = {
+			isa = PBXGroup;
+			children = (
+				EC342B70196B808500C10BB8 /* SpriteKit3_PhysicsTests.m */,
+				EC342B6B196B808500C10BB8 /* Supporting Files */,
+			);
+			path = "SpriteKit3-PhysicsTests";
+			sourceTree = "<group>";
+		};
+		EC342B6B196B808500C10BB8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EC342B6C196B808500C10BB8 /* SpriteKit3-PhysicsTests-Info.plist */,
+				EC342B6D196B808500C10BB8 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC342B37196B808400C10BB8 /* SpriteKit3-Physics */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC342B74196B808500C10BB8 /* Build configuration list for PBXNativeTarget "SpriteKit3-Physics" */;
+			buildPhases = (
+				EC342B34196B808400C10BB8 /* Sources */,
+				EC342B35196B808400C10BB8 /* Frameworks */,
+				EC342B36196B808400C10BB8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SpriteKit3-Physics";
+			productName = "SpriteKit3-Physics";
+			productReference = EC342B38196B808400C10BB8 /* SpriteKit3-Physics.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EC342B62196B808500C10BB8 /* SpriteKit3-PhysicsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC342B77196B808500C10BB8 /* Build configuration list for PBXNativeTarget "SpriteKit3-PhysicsTests" */;
+			buildPhases = (
+				EC342B5F196B808500C10BB8 /* Sources */,
+				EC342B60196B808500C10BB8 /* Frameworks */,
+				EC342B61196B808500C10BB8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC342B69196B808500C10BB8 /* PBXTargetDependency */,
+			);
+			name = "SpriteKit3-PhysicsTests";
+			productName = "SpriteKit3-PhysicsTests";
+			productReference = EC342B63196B808500C10BB8 /* SpriteKit3-PhysicsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC342B30196B808400C10BB8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TDC;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = TDC;
+				TargetAttributes = {
+					EC342B62196B808500C10BB8 = {
+						TestTargetID = EC342B37196B808400C10BB8;
+					};
+				};
+			};
+			buildConfigurationList = EC342B33196B808400C10BB8 /* Build configuration list for PBXProject "SpriteKit3-Physics" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EC342B2F196B808400C10BB8;
+			productRefGroup = EC342B39196B808400C10BB8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC342B37196B808400C10BB8 /* SpriteKit3-Physics */,
+				EC342B62196B808500C10BB8 /* SpriteKit3-PhysicsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC342B36196B808400C10BB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC342B5C196B808400C10BB8 /* Spaceship.png in Resources */,
+				EC342B5E196B808400C10BB8 /* Images.xcassets in Resources */,
+				EC342B7F196B847E00C10BB8 /* backgroundsoccer.jpg in Resources */,
+				EC342B7D196B82E300C10BB8 /* ball.png in Resources */,
+				EC342B54196B808400C10BB8 /* Main_iPad.storyboard in Resources */,
+				EC342B51196B808400C10BB8 /* Main_iPhone.storyboard in Resources */,
+				EC342B48196B808400C10BB8 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC342B61196B808500C10BB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC342B6F196B808500C10BB8 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC342B34196B808400C10BB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC342B57196B808400C10BB8 /* TDCViewController.m in Sources */,
+				EC342B4E196B808400C10BB8 /* TDCAppDelegate.m in Sources */,
+				EC342B5A196B808400C10BB8 /* TDCMyScene.m in Sources */,
+				EC342B4A196B808400C10BB8 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC342B5F196B808500C10BB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC342B71196B808500C10BB8 /* SpriteKit3_PhysicsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EC342B69196B808500C10BB8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC342B37196B808400C10BB8 /* SpriteKit3-Physics */;
+			targetProxy = EC342B68196B808500C10BB8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EC342B46196B808400C10BB8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC342B47196B808400C10BB8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EC342B4F196B808400C10BB8 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC342B50196B808400C10BB8 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		EC342B52196B808400C10BB8 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC342B53196B808400C10BB8 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		EC342B6D196B808500C10BB8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC342B6E196B808500C10BB8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EC342B72196B808500C10BB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EC342B73196B808500C10BB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EC342B75196B808500C10BB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SpriteKit3-Physics/SpriteKit3-Physics-Prefix.pch";
+				INFOPLIST_FILE = "SpriteKit3-Physics/SpriteKit3-Physics-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EC342B76196B808500C10BB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SpriteKit3-Physics/SpriteKit3-Physics-Prefix.pch";
+				INFOPLIST_FILE = "SpriteKit3-Physics/SpriteKit3-Physics-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		EC342B78196B808500C10BB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SpriteKit3-Physics.app/SpriteKit3-Physics";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SpriteKit3-Physics/SpriteKit3-Physics-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SpriteKit3-PhysicsTests/SpriteKit3-PhysicsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		EC342B79196B808500C10BB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SpriteKit3-Physics.app/SpriteKit3-Physics";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SpriteKit3-Physics/SpriteKit3-Physics-Prefix.pch";
+				INFOPLIST_FILE = "SpriteKit3-PhysicsTests/SpriteKit3-PhysicsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC342B33196B808400C10BB8 /* Build configuration list for PBXProject "SpriteKit3-Physics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC342B72196B808500C10BB8 /* Debug */,
+				EC342B73196B808500C10BB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC342B74196B808500C10BB8 /* Build configuration list for PBXNativeTarget "SpriteKit3-Physics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC342B75196B808500C10BB8 /* Debug */,
+				EC342B76196B808500C10BB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EC342B77196B808500C10BB8 /* Build configuration list for PBXNativeTarget "SpriteKit3-PhysicsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC342B78196B808500C10BB8 /* Debug */,
+				EC342B79196B808500C10BB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EC342B30196B808400C10BB8 /* Project object */;
+}
